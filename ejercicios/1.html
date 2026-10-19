@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Solicitar un dato por pantalla en una ventana emergente y mostarlos como contenido de un párrafo `<p>`.</title>
+</head>
+<body>
+    <p id="texto"></p>
+    <script>
+        texto = prompt("Introduce un texto", "");
+        document.getElementById("texto").innerHTML = texto;
+    </script>
+</body>
+</html>

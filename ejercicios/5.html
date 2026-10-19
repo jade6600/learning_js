@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear una página con un texto y dos listas plegables, una indica que el texto se ponga en negrita o no, y la otra si el texto se pone en cursiva o no.</title>
+</head>
+<body>
+    <p id="texto">Holaa este es un texto de ejemplo, puedes modificarlo.</p>
+
+    <label>Negrita:</label>
+    <select id="negrita" onchange="cambiarFormato()">
+        <option value="no">No</option>
+        <option value="si">Sí</option>
+    </select>
+
+
+    <label>Cursiva:</label>
+    <select id="cursiva" onchange="cambiarFormato()">
+        <option value="no">No</option>
+        <option value="si">Sí</option>
+    </select>
+
+    <script>
+        function cambiarFormato() {
+            let texto = document.getElementById("texto");
+
+            let negrita = document.getElementById("negrita").value;
+            let cursiva = document.getElementById("cursiva").value;
+
+            texto.style.fontWeight = negrita === "si" ? "bold" : "normal";
+            texto.style.fontStyle = cursiva === "si" ? "italic" : "normal";
+        }
+    </script>
+
+</body>
+</html>
