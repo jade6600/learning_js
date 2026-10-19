@@ -1,11 +1,11 @@
-# learning_js
+# learning_js_
 Elementos básicos del lenguaje Java Script
 
 # Las 10 reglas fundamentales de la sintaxis de JavaScript
 
-1. Las instrucciones se termiinan con punto y coma (;)
+1. Las instrucciones se terminan con punto y coma (;)
 
-2. Los nÚmeros decimales utilizan el punto (.)
+2. Los números decimales utilizan el punto (.)
 
 3. Los literales de texto van entre comillas dobles ("...") o simples ('...')
 
